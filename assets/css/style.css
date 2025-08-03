@@ -11,7 +11,7 @@
 }
 
 
-.down-arrow {
+/* .down-arrow {
   position: absolute;
   top: calc(100vh - 60px);
   left: calc(50% - 14px);
@@ -32,4 +32,4 @@
   border-right: 4px solid rgb(119, 20, 20);
   border-radius: 4px;
   transform: rotateZ(45deg);
-}
+} */
