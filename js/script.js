@@ -12,7 +12,6 @@ getElement('card-container').addEventListener('click', function(e) {
         const productTitle = orderButton.parentNode.children[1].children[0].innerText;
         const productPrice = orderButton.parentNode.children[1].children[1].innerText;
       
-        // Check if the item already exists in the cart
         let quantity = 1;
         let foundItem = false;
         
@@ -34,7 +33,6 @@ getElement('card-container').addEventListener('click', function(e) {
             });
         }
         
-        // Re-render the cart and update the total price
         fullCart();
         updateTotalPrice();
     }
