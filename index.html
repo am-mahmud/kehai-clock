@@ -26,7 +26,7 @@
                 <li class="hidden lg:block lg:hover:text-red-900 "><a href="#culture">Culture</a></li>
             </div>
             <div>
-                <a href="./cart.html"><i id="add-cart" class="fa-solid fa-cart-shopping text-base md:text-xl text-red-900 mr-2"></i></a>
+                <!-- <a href="./cart.html"><i id="add-cart" class="fa-solid fa-cart-shopping text-base md:text-xl text-red-900 mr-2"></i></a> -->
                 <button class="bg-red-900 px-2 py-1 text-white hover:bg-red-950 text-base md:text-xl rounded-md">Order Now</button>
             </div>
         </nav>
@@ -60,15 +60,59 @@
              <!-- Clock-card 1 -->
             <div class= "card  bg-gray-100 max-w-[500px] w-full flex flex-col items-center relative">
                 <img src="./assets/images/kehai-clock-yellow.png" alt="">
-                <h1 class="clock-price  text-red-900 font-medium absolute bottom-2 left-4 hover:text-red-950 text-lg"><span>Butter</span> - $<span>130</span></h1>
-                <h1 class="order-btn text-red-900 underline decoration-2 underline-offset-4 font-medium absolute bottom-4 right-4 hover:text-red-950 text-lg">Order Now</h1>
+                <h1 class="clock-price  text-red-900 font-medium absolute bottom-2 left-4 hover:text-red-950 text-base md:text-lg"><span>Butter</span> - $<span>130</span></h1>
+                <h1 class="order-btn text-red-900 underline decoration-2 underline-offset-4 font-medium absolute bottom-4 right-4 hover:text-red-950 text-base  md:text-lg">Order Now</h1>
             </div>
              <!-- Clock-card 2 -->
             <div class= "card bg-gray-100 max-w-[500px] w-full flex flex-col items-center relative">
                 <img src="./assets/images/kehai-clock-white.png" alt="">
-                <h1 class="clock-price  text-red-900 font-medium absolute bottom-2 left-4 hover:text-red-950 text-lg"><span>White</span> - $<span>150</span></h1>
-                <h1 class="order-btn text-red-900 underline decoration-2 underline-offset-4 font-medium absolute bottom-4 right-4 hover:text-red-950 text-lg">Order Now</h1>
+                <h1 class="clock-price  text-red-900 font-medium absolute bottom-2 left-4 hover:text-red-950 text-base md:text-lg"><span>White</span> - $<span>150</span></h1>
+                <h1 class="order-btn text-red-900 underline decoration-2 underline-offset-4 font-medium absolute bottom-4 right-4 hover:text-red-950 text-base md:text-lg">Order Now</h1>
             </div>
+        </div>
+
+        <!-- Cart section -->
+
+        <hr class="border-t-2 border-red-900 w-1/4 mx-auto mb-10 mt-10" id="order now">
+       
+        <h1 class=" text-red-900 font-extrabold text-4xl lg:text-6xl text-center ">Shop</h1>
+
+         <div class="w-full mt-10">
+            <!-- Header row -->
+            <div class="grid grid-cols-3 font-semibold  mb-2 text-center text-red-900">
+                <h1>Product</h1>
+                <h1>Quantity</h1>
+                <h1>Total</h1>
+            </div>
+
+             <!-- Product row -->
+             <div class="grid grid-col-1 grid-cols-3 items-center text-center">
+                <!-- Product info -->
+                <div class="flex flex-col md:flex-row gap-1 md:gap-3 items-center justify-center">
+                    <img class="h-20 w-20 object-contain" src="./assets/images/kehai-clock-yellow.png" alt="Kehai Clock">
+                    <div class="text-center md:text-left">
+                        <h1 class="font-medium text-sm mb-2 md:mb-0 md:text-base">Kehai Clock - Butter</h1>
+                        <p class="text-sm md:text-base">$130</p>
+                     </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-2">
+                    <button class="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300">+</button>
+                    <span id="quantity" class="px-3">1</span>
+                    <button class="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300">-</button>
+                </div>
+
+                <!-- Total -->
+                <div>
+                    <h1>$130</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <div class="flex justify-center items-center mt-5 mb-10">
+            <button class="bg-red-900 px-2 py-1 text-white hover:bg-red-950 text-lg md:text-xl rounded-md">Check Out</button>
         </div>
 
         <!-- Description -->
