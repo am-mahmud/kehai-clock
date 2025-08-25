@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link CSS -->
      <link rel="stylesheet" href="./assets/css/style.css">
-     <!-- Tailwind CDN -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Kehai Clock</title>
@@ -15,7 +15,7 @@
 <body class="ubuntu-font px-4">
     <header>
         <!-- Navbar -->
-        <nav class="fixed top-0 left-0 w-full z-50 bg-white flex justify-between gap-2 px-2 md:px-8 text-xl mt-2 items-center">
+        <nav class="top-0 left-0 w-full z-50 bg-white flex justify-between gap-2 px-2 md:px-8 text-xl mt-2 items-center">
             <div>
                 <h1 class="text-red-900 text-2xl md:text-3xl font-bold hover:text-red-950"><a href="#home">けはい - Kehai</a></h1>
             </div>
@@ -27,7 +27,7 @@
             </div>
             <div>
                 <!-- <a href="./cart.html"><i id="add-cart" class="fa-solid fa-cart-shopping text-base md:text-xl text-red-900 mr-2"></i></a> -->
-                <button class="bg-red-900 px-2 py-1 text-white hover:bg-red-950 text-base md:text-xl rounded-md">Order Now</button>
+                <button class="bg-red-900 px-2 py-1 text-white hover:bg-red-950 text-base md:text-xl rounded-md"><a href="#shop">Order Now</a></button>
             </div>
         </nav>
 
@@ -53,7 +53,9 @@
     </header>
 
     <main class="mt-20" id="price">
-        <hr class="border-t-2 border-red-900 w-1/4 mx-auto mb-10">
+        <hr id="shop" class="border-t-2 border-red-900 w-1/4 mx-auto mb-10">
+
+        <h1 class=" text-red-900 font-extrabold text-4xl lg:text-6xl text-center mb-10 ">Shop</h1>
 
        <!-- Card container -->
         <div id="card-container" class="flex flex-col justify-center items-center w-full lg:flex-row lg:justify-evenly gap-10">
@@ -75,11 +77,9 @@
 
         <hr class="border-t-2 border-red-900 w-1/4 mx-auto mb-10 mt-10" id="order now">
        
-        <h1 class=" text-red-900 font-extrabold text-4xl lg:text-6xl text-center ">Shop</h1>
-
          <div class="w-full mt-10">
             <!-- Header row -->
-            <div class="grid grid-cols-3 font-semibold  mb-2 text-center text-red-900">
+            <div class="grid grid-cols-3 font-semibold mb-3 md:mb-2 text-center text-red-900">
                 <h1>Product</h1>
                 <h1>Quantity</h1>
                 <h1>Total</h1>
